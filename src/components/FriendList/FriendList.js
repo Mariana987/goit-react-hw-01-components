@@ -1,10 +1,10 @@
 import FriendsListItem from './FriendListItem';
 import PropTypes from 'prop-types';
-
+import s from './FriendListItem.module.css'
 function FriendsList({ elements }) {
     return (
-        <section>
-            <ul>
+        <section className={s.section}>
+            <ul >
                 {elements.map(element => (
                     < FriendsListItem
                         key={element.id}

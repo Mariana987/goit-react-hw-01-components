@@ -1,11 +1,11 @@
 import Statistics from './Statistics'
 import PropTypes from 'prop-types';
-function StatisticsList({ items }) {
+import s from './Statistics.module.css'
+function StatisticsList({ title, items }) {
     return (
-        <section>
-            <h2 className="title">Upload stats</h2>
-            {/* {title && <h2 >{title}</h2>} */}
-            <ul>
+        <section className={s.container}>
+            {title && <h2 >{title}</h2>}
+            <ul className={s.list}>
                 {items.map(item => (
                     <Statistics
                         key={item.id}
