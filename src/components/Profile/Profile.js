@@ -1,8 +1,6 @@
-// import React from 'react';
-// import ReactDOM from 'react-dom';
 import PropTypes from 'prop-types';
 
-const Profile = ({ name, tag, location, avatar, followers, views, likes }) => {
+function Profile({ name, tag, location, avatar, followers, views, likes }) {
     return (
         <div className="profile">
             <div className="description">
@@ -43,22 +41,7 @@ Profile.propTypes = {
     likes: PropTypes.number.isRequired,
 }
 
-
-// ReactDOM.render(
-//     <Profile
-//         name={data.name}
-//         tag={data.tag}
-//         location={data.location}
-//         avatar={data.avatar}
-//         followers={data.stats.followers}
-//         views={data.stats.views}
-//         likes={data.stats.likes}
-//     />,
-//     document.querySelector('#root'));
-
-// console.log(profile)
-
-export default Profile
+export default Profile;
 
 
 

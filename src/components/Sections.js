@@ -1,5 +1,7 @@
+import s from './Sections.module.css'
+
 function Sections({ children }) {
-    return <div>
+    return <div className={s.section}>
         {children}
     </div>
 
